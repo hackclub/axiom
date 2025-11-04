@@ -714,22 +714,6 @@ document.addEventListener('DOMContentLoaded', function() {
           </tbody>
         </table>
 
-        <h3>Bonus</h3>
-        <table style={{borderCollapse: 'collapse', width: '100%', marginBottom: '20px', border: '1px solid #ddd'}}>
-          <thead>
-            <tr style={{backgroundColor: '#111111'}}>
-              <th style={{border: '1px solid #ddd', padding: '12px', textAlign: 'left'}}>Product</th>
-              <th style={{border: '1px solid #ddd', padding: '12px', textAlign: 'left'}}>Hours Required</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr className="rainbow-glow-row">
-              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://bambulab.com/en-us/a1-mini" style={{color: 'lightblue'}}>Bambu Lab A1 Mini 3D Printer</a></td>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>45+ hours</td>
-            </tr>
-          </tbody>
-        </table>
-
         <h3>Math Software</h3>
         <table style={{borderCollapse: 'collapse', width: '100%', marginBottom: '20px', border: '1px solid #ddd'}}>
           <thead>
@@ -749,6 +733,26 @@ document.addEventListener('DOMContentLoaded', function() {
               <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.mathworks.com/products/matlab.html" style={{color: 'lightblue'}}>MATLAB Student Edition</a></td>
               <td style={{border: '1px solid #ddd', padding: '12px'}}>Forever</td>
               <td style={{border: '1px solid #ddd', padding: '12px'}}>10+ hours</td>
+            </tr>
+            <tr>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.wolframalpha.com/pro/" style={{color: 'lightblue'}}>Wolfram Alpha Pro</a> or <a href="https://www.wolframalpha.com/pro-for-students/" style={{color: 'lightblue'}}>Wolfram Alpha Pro for Students</a></td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>1 month</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>2+ hours</td>
+            </tr>
+            <tr>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.wolframalpha.com/pro/" style={{color: 'lightblue'}}>Wolfram Alpha Pro</a> or <a href="https://www.wolframalpha.com/pro-for-students/" style={{color: 'lightblue'}}>Wolfram Alpha Pro for Students</a></td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>6 months</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>7+ hours</td>
+            </tr>
+            <tr>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.wolframalpha.com/pro/" style={{color: 'lightblue'}}>Wolfram Alpha Pro</a> or <a href="https://www.wolframalpha.com/pro-for-students/" style={{color: 'lightblue'}}>Wolfram Alpha Pro for Students</a></td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>1 year</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>12+ hours</td>
+            </tr>
+            <tr>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.solidworks.com/product/students" style={{color: 'lightblue'}}>SolidWorks Student Edition</a></td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>1 year</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>12+ hours</td>
             </tr>
             <tr>
               <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.wolfram.com/mathematica-student-edition/" style={{color: 'lightblue'}}>Mathematica Student Edition</a></td>
@@ -773,7 +777,47 @@ document.addEventListener('DOMContentLoaded', function() {
           </tbody>
         </table>
 
-        <p><strong>Note:</strong> Any remaining hours beyond your chosen reward can be applied toward grants at $4/h or additional items from the same or a different category.</p>
+        <h3>Bonus</h3>
+        <table style={{borderCollapse: 'collapse', width: '100%', marginBottom: '20px', border: '1px solid #ddd'}}>
+          <thead>
+            <tr style={{backgroundColor: '#111111'}}>
+              <th style={{border: '1px solid #ddd', padding: '12px', textAlign: 'left'}}>Product</th>
+              <th style={{border: '1px solid #ddd', padding: '12px', textAlign: 'left'}}>Hours Required</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://store.arduino.cc/products/uno" style={{color: 'lightblue'}}>Arduino UNO R4</a></td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>12+ hours</td>
+            </tr>
+            <tr>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.casio.com/us/scientific-calculators/product.FX-991CW/" style={{color: 'lightblue'}}>Casio FX-991CW</a></td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>7+ hours</td>
+            </tr>
+            <tr>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.casio.com/us/scientific-calculators/product.FX-CG50/" style={{color: 'lightblue'}}>Casio FX-CG50 Graphing Calculator</a></td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>24+ hours</td>
+            </tr>
+            <tr>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://education.ti.com/en/products/calculators/graphing-calculators/ti-84-plus-ce-python" style={{color: 'lightblue'}}>TI-84 Plus CE Python Edition</a></td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>24+ hours</td>
+            </tr>
+            <tr>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://education.ti.com/en/products/calculators/graphing-calculators/ti-nspire-cx-ii-cx-ii-cas" style={{color: 'lightblue'}}>TI-Nspire CX II</a></td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>31+ hours</td>
+            </tr>
+            <tr className="rainbow-glow-row">
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://bambulab.com/en-us/a1-mini" style={{color: 'lightblue'}}>Bambu Lab A1 Mini 3D Printer</a></td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>45+ hours</td>
+            </tr>
+            <tr>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>Grant for math courses or books</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>$5/hour</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p><strong>Note:</strong> Any remaining hours beyond your chosen reward can be applied toward grants for math/science related items at $4/h or additional items from the same or a different category.</p>
         
       </PageTemplate>
     <PageTemplate path="axiom-faq">
