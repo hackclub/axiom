@@ -272,35 +272,35 @@ function PageTemplate({children,path}){
     </PageDiv>
     );
   }
-function Responses() {
-  const [totalResponses, setTotalResponses] = React.useState(null);
+// function Responses() {
+//   const [totalResponses, setTotalResponses] = React.useState(null);
 
-  useEffect(() => {
-    fetch("https://llmdump.duckdns.org:5000/")
-      .then((response) => response.json())
-      .then((data) => {
-        if (data && data.totalResponses !== undefined) {
-          setTotalResponses(data.totalResponses);
-        }
-      })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-      });
-  }, []);
+//   useEffect(() => {
+//     fetch("https://llmdump.duckdns.org:5000/")
+//       .then((response) => response.json())
+//       .then((data) => {
+//         if (data && data.totalResponses !== undefined) {
+//           setTotalResponses(data.totalResponses);
+//         }
+//       })
+//       .catch((error) => {
+//         console.error("Error fetching data:", error);
+//       });
+//   }, []);
 
-  return (
-    <span>
-      {totalResponses !== null ? (
-        <span>
-          {totalResponses >= 20 ? `${totalResponses} out of 50` : `${totalResponses} out of 20`}
-        </span>
-      ) : (
-        <span>(loading) out of (loading)</span>
-      )}
-    </span>
-  );
+//   return (
+//     <span>
+//       {totalResponses !== null ? (
+//         <span>
+//           {totalResponses >= 20 ? `${totalResponses} out of 50` : `${totalResponses} out of 20`}
+//         </span>
+//       ) : (
+//         <span>(loading) out of (loading)</span>
+//       )}
+//     </span>
+//   );
     
-}
+// }
 
 
 
