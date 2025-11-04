@@ -257,7 +257,7 @@ function PageTemplate({children,path}){
               
               <div style={{ display: 'flex', justifyContent: 'left', alignItems: 'left', color: 'white', margin: '50px', maxWidth: '1200px', width: '100%' }}>
                  <div style={{ width: '100%' }}>
-                  <a href="/axiom/" style={{ color: '#64b5f6', textDecoration: 'underline', fontSize: "0.8rem" }}>Return to homepage</a>
+                  <a href="/" style={{ color: '#64b5f6', textDecoration: 'underline', fontSize: "0.8rem" }}>Return to homepage</a>
                   &nbsp;
                   {children}
                  </div>
@@ -384,8 +384,8 @@ function App() {
                  <h3><a href="https://hackatime.hackclub.com/" style={{color: 'lightblue'}}>Hackatime</a> time tracking is required.</h3>
                  <p style={{fontSize:"0.8rem"}}>Only for students aged 18 or under who are eligible for <a href="https://hackclub.com" style={{color:"lightblue"}}>Hack Club</a>.</p>
                  <p><Button href="https://forms.hackclub.com/axiom-submit" className="rainbow-glow-row" style={{width: '100%', display: 'block', textAlign: 'center', marginBottom: '10px'}}>Submit</Button></p>
-                 <p><Button href="/axiom/rewards">Rewards</Button> <Button href="https://hackclub.slack.com/archives/C09K4HZJ2DP">Join Slack</Button></p>
-                 <p><Button href="/axiom/guides">Guides and tools</Button> <Button href="/axiom/faq">FAQ</Button></p>
+                 <p><Button href="/rewards">Rewards</Button> <Button href="https://hackclub.slack.com/archives/C09K4HZJ2DP">Join Slack</Button></p>
+                 <p><Button href="/guides">Guides and tools</Button> <Button href="/faq">FAQ</Button></p>
                  <p><Button href="https://bananahannah7.github.io/drone_notebook/">Example project (not by me) </Button></p>
                  </div>
               </div>
@@ -431,8 +431,8 @@ function App() {
         <p><a href="https://hackatime.hackclub.com/" style={{color: 'lightblue'}}>Hackatime</a> time tracking is required.</p>
         <p style={{fontSize:"0.8rem"}}>Only for students aged 18 or under who are eligible for <a href="https://hackclub.com" style={{color:"lightblue"}}>Hack Club</a>.</p>
         <p><Button href="https://forms.hackclub.com/axiom-submit" className="rainbow-glow-row" style={{width: '100%', display: 'block', textAlign: 'center', marginBottom: '10px'}}>Submit</Button></p>
-        <p><Button href="/axiom/rewards">Rewards</Button> <Button href="https://hackclub.slack.com/archives/C09K4HZJ2DP">Join Slack</Button></p>
-        <p><Button href="/axiom/guides">Guides and tools</Button> <Button href="/axiom/faq">FAQ</Button></p>
+        <p><Button href="/rewards">Rewards</Button> <Button href="https://hackclub.slack.com/archives/C09K4HZJ2DP">Join Slack</Button></p>
+        <p><Button href="/guides">Guides and tools</Button> <Button href="/faq">FAQ</Button></p>
         <p><Button href="https://bananahannah7.github.io/drone_notebook/">Example project (not by me) </Button></p>
         </div>
       </span>
@@ -450,7 +450,7 @@ function App() {
     <PageDiv path="axiom-404" className="App">
     <h1>404 - Page Not Found</h1>
     <p>Sorry, the page you are looking for does not exist.</p>
-    <p><Button href="/axiom/">Go to Home</Button></p>
+    <p><Button href="/">Go to Home</Button></p>
     </PageDiv> 
     <PageTemplate path="axiom-guides">
       <h2>Guides and Tools</h2>
@@ -459,12 +459,12 @@ function App() {
       <h3>MathQuill</h3>
       <p>This is a library for displaying LaTeX math in web applications.</p>
       
-      <p><strong>Resources:</strong><Button href="/axiom/guides/mathquill">MathQuill template</Button> <Button href="https://docs.mathquill.com/en/latest/Getting_Started/">Official MathQuill docs (more advanced)</Button></p>
+      <p><strong>Resources:</strong><Button href="/guides/mathquill">MathQuill template</Button> <Button href="https://docs.mathquill.com/en/latest/Getting_Started/">Official MathQuill docs (more advanced)</Button></p>
 
     <h3>LaTeX</h3>
     <p>This is the way you write math (and any kind of scientific document/research paper). If you don't know how to use this, you should check out the guide.</p>
     <p><strong>Resources:</strong> 
-    <Button href="/axiom/guides/latex"> Easy LaTeX guide for math</Button>
+    <Button href="/guides/latex"> Easy LaTeX guide for math</Button>
     <Button href="https://www.overleaf.com/">Overleaf (the thing you use to edit LaTeX)</Button>
     <Button href="https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes">Overleaf's LaTeX guide</Button>
     <Button href="https://www.latex-project.org/help/documentation/">Official LaTeX docs (only if you are desperate)</Button>
@@ -489,10 +489,10 @@ print(f"Solutions: {solution}") // Solutions: [-2, 2]`}
       <p><strong>Resources:</strong> <Button href="https://docs.sympy.org/latest/index.html">Official SymPy docs</Button></p>
       </PageTemplate>
       <PageTemplate path="axiom-guides-mathquill">
-        <a href="/axiom/guides" style={{ color: '#64b5f6', textDecoration: 'underline', fontSize: "0.8rem" }}>Return to guides</a>
+        <a href="/guides" style={{ color: '#64b5f6', textDecoration: 'underline', fontSize: "0.8rem" }}>Return to guides</a>
         <h1>MathQuill guide</h1>
         <p>This is a simple template to get you started with MathQuill.</p>
-        <p>This is assuming static HTML/CSS/JS and knowledge of LaTeX. If you don't know LaTeX, check our guide: <Button href="/axiom/guides/latex">LaTeX guide</Button></p>
+        <p>This is assuming static HTML/CSS/JS and knowledge of LaTeX. If you don't know LaTeX, check our guide: <Button href="/guides/latex">LaTeX guide</Button></p>
         <p>Include MathQuill CSS and JS in your HTML file. You can use the CDN links</p>
         <pre className="language-html"><code>{`
     <!-- in <head> -->
@@ -568,7 +568,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <li>Making an editable field is also easy. Use the <code>MathField</code> class instead and set the <code>data-callback</code> to the name of the function you want to call (with the latex as the input).<br></br>
           The function has to be global. To make it globa;, do something like <code>window.functionName = functionName</code></li>
         </ul>
-        <p>Example: <Button href="/axiom/mq_example.html">Example (interactive)</Button> <Button href="/axiom/mq_example.txt">Example (code)</Button></p>
+        <p>Example: <Button href="/mq_example.html">Example (interactive)</Button> <Button href="/mq_example.txt">Example (code)</Button></p>
 
         
         <strong>Important:</strong></p>
@@ -579,11 +579,11 @@ document.addEventListener('DOMContentLoaded', function() {
         
       </PageTemplate>
       <PageTemplate path="axiom-guides-latex">
-        &nbsp;<a href="/axiom/guides" style={{ color: '#64b5f6', textDecoration: 'underline', fontSize: "0.8rem" }}>Return to guides</a>
+        &nbsp;<a href="/guides" style={{ color: '#64b5f6', textDecoration: 'underline', fontSize: "0.8rem" }}>Return to guides</a>
         <h1>LaTeX</h1>
-        <p>First, visit our MathQuill example (you don't need to look at the code now): <Button href="/axiom/mq_example.html">Visit it!</Button></p>
+        <p>First, visit our MathQuill example (you don't need to look at the code now): <Button href="/mq_example.html">Visit it!</Button></p>
         <p>You should see an editable field:</p>
-        <img src="/axiom/latex_editable.png" alt="LaTeX editable field example" width="300" />
+        <img src="/latex_editable.png" alt="LaTeX editable field example" width="300" />
         <p>Try typing math like normal, using expressions like  fractions, powers, parentheses, operators, functions (sin,cos) etc. You should see the output change.</p>
         <p>Doing this, you can already get a feel of how LaTeX works.</p>
         <ul>
@@ -595,7 +595,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </ul>
         <p>But there are more things available in LaTeX than these in a complete document. Open up Overleaf, the LaTeX document editor.<Button href="https://overleaf.com">Open Overleaf</Button></p>
         <p>Login and create a blank project. It should look like this:</p>
-        <img src="/axiom/overleaf_blank.png" alt="Overleaf blank project" width="600" />
+        <img src="/overleaf_blank.png" alt="Overleaf blank project" width="600" />
         <p>You will notice there are some things prefilled in. This is because you are now editing a full document, not just a single expression.</p>
         <p>The <code>{`\\begin{document}`}</code> and <code>{`\\end{document}`}</code> indicate where the document starts and ends. </p>
         <p>You can use the visual editor here to test more advanced features of latex.</p>
