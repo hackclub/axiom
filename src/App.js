@@ -252,11 +252,11 @@ function PageTemplate({children,path}){
     <PageDiv path={path} className= "app">
       <LayerContainer>
         <Thingy script={"1x,v,1;3x,h,2;2x,h,1"} z={1} className="clickthrough" classNameInherit="clickthrough">
-          <ColoredRoundedSquare marginLeft="20px">
-            <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'left', width: '100%' }}>
+          <ColoredRoundedSquare marginLeft="auto" marginRight="auto" radius="0px">
+            <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'left', width: '100%', justifyContent: 'center' }}>
               
-              <div style={{ flex: 1, display: 'flex', justifyContent: 'left', alignItems: 'left', color: 'white', margin: '50px' }}>
-                 <div>
+              <div style={{ display: 'flex', justifyContent: 'left', alignItems: 'left', color: 'white', margin: '50px', maxWidth: '1200px', width: '100%' }}>
+                 <div style={{ width: '100%' }}>
                   <a href="/axiom/" style={{ color: '#64b5f6', textDecoration: 'underline', fontSize: "0.8rem" }}>Return to homepage</a>
                   &nbsp;
                   {children}
@@ -355,14 +355,36 @@ function App() {
                  <div>
                   {/* c75d53ff-5b68-455e-ab8d-abc94dda6548 */}
                  <h1>Make a math/science related app,<br></br> get rewards!</h1>
-                 <p>Make any math or science related app and earn 5$/hour grant for anything math/science/programming
+                 <p>Make any math or science related app and earn a grant for anything math/science/programming
                   related or other special rewards.
                  </p>
-                 <h3>Hackatime time tracking is required.</h3>
-                 <p><strong>RSVP so that this YSWS starts! <Responses/> RSVPs submitted!</strong></p>
+                 <p style={{position: 'relative', display: 'inline-block'}}>
+                   <span 
+                     style={{borderBottom: '2px dotted #888', cursor: 'help', fontSize: '1.3rem'}}
+                     onMouseEnter={(e) => {
+                     const tooltip = e.currentTarget.nextSibling;
+                     tooltip.timeoutId = setTimeout(() => {
+                     tooltip.style.display = 'block';
+                     tooltip.classList.add('tooltip-fade');
+                     }, 100);
+                     }}
+                     onMouseLeave={(e) => {
+                     const tooltip = e.currentTarget.nextSibling;
+                     if (tooltip.timeoutId) clearTimeout(tooltip.timeoutId);
+                       tooltip.style.display = 'none';
+                        tooltip.classList.remove('tooltip-fade');
+                      }}
+                   >
+                     V1 running from 11/4/25 to 11/18/25
+                   </span>
+                   <span style={{display: 'none', position: 'absolute', bottom: '100%', left: '50%', transform: 'translateX(-50%)', backgroundColor: '#222', color: '#fff', padding: '10px 14px', borderRadius: '6px', maxWidth: '380px', marginBottom: '8px', zIndex: 1000, fontSize: '1.05rem', boxShadow: '0 2px 8px rgba(0,0,0,0.3)', textAlign: 'center'}}>
+                     Axiom WILL have a V2! If you start a project for V1 but don't submit it, you WILL be able to submit for V2 and keep your tracked hours!
+                   </span>
+                 </p>
+                 <h3><a href="https://hackatime.hackclub.com/" style={{color: 'lightblue'}}>Hackatime</a> time tracking is required.</h3>
                  <p style={{fontSize:"0.8rem"}}>Only for students aged 18 or under who are eligible for <a href="https://hackclub.com" style={{color:"lightblue"}}>Hack Club</a>.</p>
-                 <p> <Button href="/axiom/rewards">Rewards</Button> <Button href="/axiom/submit">Submit</Button></p>
-                 <p><Button href="https://forms.fillout.com/t/aXkqWZoos2us"><strong>RSVP!</strong></Button> <Button href="https://hackclub.slack.com/archives/C09K4HZJ2DP">Join Slack</Button></p>
+                 <p><Button href="https://forms.hackclub.com/axiom-submit" className="rainbow-glow-row" style={{width: '100%', display: 'block', textAlign: 'center', marginBottom: '10px'}}>Submit</Button></p>
+                 <p><Button href="/axiom/rewards">Rewards</Button> <Button href="https://hackclub.slack.com/archives/C09K4HZJ2DP">Join Slack</Button></p>
                  <p><Button href="/axiom/guides">Guides and tools</Button> <Button href="/axiom/faq">FAQ</Button></p>
                  <p><Button href="https://bananahannah7.github.io/drone_notebook/">Example project (not by me) </Button></p>
                  </div>
@@ -380,14 +402,36 @@ function App() {
         <div>
         {/* c75d53ff-5b68-455e-ab8d-abc94dda6548 */}
         <h1>Make a math/science related app,<br/> get rewards!</h1>
-        <p>Make any math or science related app and earn 5$/hour grant for anything math/science/programming
+        <p>Make any math or science related app and earn a grant for anything math/science/programming
         related or other special rewards.
         </p>
-        <p><strong>RSVP so that this YSWS starts! <Responses/> RSVPs submitted!</strong></p>
-        <p>Hackatime time tracking is required.</p>
+        <p style={{position: 'relative', display: 'inline-block'}}>
+          <span 
+            style={{borderBottom: '2px dotted #888', cursor: 'help', fontSize: '1.3rem'}}
+            onMouseEnter={(e) => {
+              const tooltip = e.currentTarget.nextSibling;
+              tooltip.timeoutId = setTimeout(() => {
+                tooltip.style.display = 'block';
+                tooltip.classList.add('tooltip-fade');
+              }, 100);
+            }}
+            onMouseLeave={(e) => {
+              const tooltip = e.currentTarget.nextSibling;
+              if (tooltip.timeoutId) clearTimeout(tooltip.timeoutId);
+              tooltip.style.display = 'none';
+              tooltip.classList.remove('tooltip-fade');
+            }}
+          >
+            V1 running from 11/4/25 to 11/18/25
+          </span>
+          <span style={{display: 'none', position: 'absolute', bottom: '100%', left: '50%', transform: 'translateX(-50%)', backgroundColor: '#222', color: '#fff', padding: '10px 14px', borderRadius: '6px', maxWidth: '380px', marginBottom: '8px', zIndex: 1000, fontSize: '1.05rem', boxShadow: '0 2px 8px rgba(0,0,0,0.3)', textAlign: 'center'}}>
+            Axiom WILL have a V2! If you start a project for V1 but don't submit it, you WILL be able to submit for V2 and keep your tracked hours!
+          </span>
+        </p>
+        <p><a href="https://hackatime.hackclub.com/" style={{color: 'lightblue'}}>Hackatime</a> time tracking is required.</p>
         <p style={{fontSize:"0.8rem"}}>Only for students aged 18 or under who are eligible for <a href="https://hackclub.com" style={{color:"lightblue"}}>Hack Club</a>.</p>
-        <p> <Button href="/axiom/rewards">Rewards</Button> <Button href="/axiom/submit">Submit</Button></p>
-        <p><Button href="https://forms.fillout.com/t/aXkqWZoos2us"><strong>RSVP!</strong></Button> <Button href="https://hackclub.slack.com/archives/C09K4HZJ2DP">Join Slack</Button></p>
+        <p><Button href="https://forms.hackclub.com/axiom-submit" className="rainbow-glow-row" style={{width: '100%', display: 'block', textAlign: 'center', marginBottom: '10px'}}>Submit</Button></p>
+        <p><Button href="/axiom/rewards">Rewards</Button> <Button href="https://hackclub.slack.com/archives/C09K4HZJ2DP">Join Slack</Button></p>
         <p><Button href="/axiom/guides">Guides and tools</Button> <Button href="/axiom/faq">FAQ</Button></p>
         <p><Button href="https://bananahannah7.github.io/drone_notebook/">Example project (not by me) </Button></p>
         </div>
@@ -568,68 +612,126 @@ document.addEventListener('DOMContentLoaded', function() {
         <h1>Rewards</h1>
         <h2>Choose Your Reward</h2>
         <p>Code hours to earn rewards! Any remaining hours beyond your chosen reward go toward grants or additional items.</p>
-        <p>If you want any other rewards, tell me in slack @itzmetanjim.</p>
+        <p>If you want any other rewards, tell us in slack in <a href="https://hackclub.slack.com/archives/C09K4HZJ2DP" style={{color: 'lightblue'}}>#axiom</a>.</p>
+        <p style={{borderLeft: '4px solid #888', paddingLeft: '16px', marginBottom: '20px'}}>
+          <strong>International Participants:</strong> Listed prices are for US and Canada only. If you're located elsewhere, you can still claim physical prizes! Find a seller in your region (click "View details" on any product and check available sellers), and we'll calculate a new hour requirement at <strong>$4.50 USD/hour</strong> including shipping costs.
+        </p>
         <h3>Raspberry Pi ± Kits</h3>
-        <table style={{borderCollapse: 'collapse', width: '100%', marginBottom: '20px'}}>
+        <table style={{borderCollapse: 'collapse', width: '100%', marginBottom: '20px', border: '1px solid #ddd'}}>
           <thead>
             <tr style={{backgroundColor: '#111111'}}>
               <th style={{border: '1px solid #ddd', padding: '12px', textAlign: 'left'}}>Product</th>
               <th style={{border: '1px solid #ddd', padding: '12px', textAlign: 'left'}}>Hours Required</th>
               <th style={{border: '1px solid #ddd', padding: '12px', textAlign: 'left'}}>Notes</th>
+              <th style={{border: '1px solid #ddd', padding: '12px', textAlign: 'left'}}>Model Details</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>Pi Zero 2W Kit (512MB RAM)</td>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>3+ hours</td>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>code 2 more hours you get 4x more ram and cpu</td>
-            </tr>
-            <tr>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>Raspberry Pi 4B Kit (2GB RAM)</td>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>5+ hours</td>
-              <td style={{border: '1px solid </PageTemplate>#ddd', padding: '12px'}}>Complete kit included</td>
-            </tr>
-            <tr>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>RPi 5 Kit (4GB RAM)</td>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>12+ hours</td>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>Latest generation</td>
-            </tr>
-            <tr>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>RPi 5 Kit (4GB RAM) + Pi Camera</td>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>17+ hours</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.canakit.com/raspberry-pi-zero-2-w.html?cid=usd" style={{color: 'lightblue'}}>Base Pi Zero 2W</a> (512MB RAM)</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>7+ hours</td>
               <td style={{border: '1px solid #ddd', padding: '12px'}}></td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/" style={{color: 'lightblue'}}>View details</a></td>
             </tr>
             <tr>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>RPi 5 (8GB RAM, no kit)</td>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>16+ hours</td>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>No kit</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.canakit.com/raspberry-pi-zero-2-w.html?cid=usd" style={{color: 'lightblue'}}>Pi Zero 2W Kit</a> (512MB RAM)</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>10+ hours</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}></td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/" style={{color: 'lightblue'}}>View details</a></td>
             </tr>
             <tr>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>RPi 5 (16GB RAM, no kit)</td>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>24+ hours</td>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>no kit, what are you even running here?</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.canakit.com/raspberry-pi-4-2gb.html?cid=usd" style={{color: 'lightblue'}}>Base Pi 4B</a> (2GB RAM)</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>14+ hours</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}></td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.raspberrypi.com/products/raspberry-pi-4-model-b/" style={{color: 'lightblue'}}>View details</a></td>
             </tr>
             <tr>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>RPi 500 (Basic)</td>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>18+ hours</td>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>No mouse, HDMI cable, or power supply</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.canakit.com/raspberry-pi-4-starter-kit.html?cid=usd" style={{color: 'lightblue'}}>Pi 4B Kit</a> (2GB RAM)</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>26+ hours</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>Complete kit included</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.raspberrypi.com/products/raspberry-pi-4-model-b/" style={{color: 'lightblue'}}>View details</a></td>
             </tr>
             <tr>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>RPi 500 Desktop Kit</td>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>21+ hours</td>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>Includes mouse, HDMI cable, 27W USB-C power supply, guidebook</td>
-            </tr>
-            <tr>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>RPi 500 PLUS</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.canakit.com/raspberry-pi-4-starter-kit.html?cid=usd" style={{color: 'lightblue'}}>Pi 4B Kit</a> (2GB RAM) + <a href="https://www.canakit.com/raspberry-pi-camera-module-3.html?cid=usd" style={{color: 'lightblue'}}>Pi Camera</a></td>
               <td style={{border: '1px solid #ddd', padding: '12px'}}>35+ hours</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}></td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.raspberrypi.com/products/raspberry-pi-4-model-b/" style={{color: 'lightblue'}}>View details</a> (<a href="https://www.raspberrypi.com/products/camera-module-3/" style={{color: 'lightblue'}}>View camera details</a>)</td>
+            </tr>
+            <tr>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.canakit.com/raspberry-pi-5-4gb.html?cid=usd" style={{color: 'lightblue'}}>Base Pi 5</a> (4GB RAM)</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>16+ hours</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>Latest generation</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.raspberrypi.com/products/raspberry-pi-5/" style={{color: 'lightblue'}}>View details</a></td>
+            </tr>
+            <tr>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.canakit.com/raspberry-pi-5-4gb.html?cid=usd" style={{color: 'lightblue'}}>Pi 5 Kit</a> (4GB RAM)</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>30+ hours</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>Latest generation</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.raspberrypi.com/products/raspberry-pi-5/" style={{color: 'lightblue'}}>View details</a></td>
+            </tr>
+            <tr>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.canakit.com/raspberry-pi-5-4gb.html?cid=usd" style={{color: 'lightblue'}}>Pi 5 Kit</a> (4GB RAM) + <a href="https://www.canakit.com/raspberry-pi-camera-module-3.html?cid=usd" style={{color: 'lightblue'}}>Pi Camera</a></td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>36+ hours</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}></td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.raspberrypi.com/products/raspberry-pi-5/" style={{color: 'lightblue'}}>View details</a> (<a href="https://www.raspberrypi.com/products/camera-module-3/" style={{color: 'lightblue'}}>View camera details</a>)</td>
+            </tr>
+            <tr>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.canakit.com/raspberry-pi-5-8gb.html?cid=usd" style={{color: 'lightblue'}}>Base Pi 5</a> (8GB RAM)</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>20+ hours</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>No kit</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.raspberrypi.com/products/raspberry-pi-5/" style={{color: 'lightblue'}}>View details</a></td>
+            </tr>
+            <tr>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.canakit.com/raspberry-pi-5-16gb.html?cid=usd" style={{color: 'lightblue'}}>Base Pi 5</a> (16GB RAM)</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>28+ hours</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>no kit, what are you even running here?</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.raspberrypi.com/products/raspberry-pi-5/" style={{color: 'lightblue'}}>View details</a></td>
+            </tr>
+            <tr>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.canakit.com/raspberry-pi-500.html?cid=usd" style={{color: 'lightblue'}}>Pi 500 Basic</a></td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>24+ hours</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>No mouse, HDMI cable, or power supply</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.raspberrypi.com/products/raspberry-pi-500/" style={{color: 'lightblue'}}>View details</a></td>
+            </tr>
+            <tr>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.canakit.com/raspberry-pi-500-desktop-kit.html?cid=usd" style={{color: 'lightblue'}}>Pi 500 Desktop Kit</a></td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>30+ hours</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>Includes mouse, HDMI cable, 27W USB-C power supply, guidebook</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.raspberrypi.com/products/raspberry-pi-500/" style={{color: 'lightblue'}}>View details</a></td>
+            </tr>
+            <tr>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.canakit.com/raspberry-pi-500-plus.html?cid=usd" style={{color: 'lightblue'}}>Pi 500 Plus</a></td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>44+ hours</td>
               <td style={{border: '1px solid #ddd', padding: '12px'}}>Uses RPI 5 16GB RAM, 256GB NVMe, RGB keyboard</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.raspberrypi.com/products/raspberry-pi-500/" style={{color: 'lightblue'}}>View details</a></td>
+            </tr>
+            <tr className="rainbow-glow-row">
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.canakit.com/raspberry-pi-500-plus.html?cid=usd" style={{color: 'lightblue'}}>Pi 500 Plus Desktop Kit</a></td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>48+ hours</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>Uses RPI 5 16GB RAM, 256GB NVMe, RGB keyboard</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.raspberrypi.com/products/raspberry-pi-500/" style={{color: 'lightblue'}}>View details</a></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Bonus</h3>
+        <table style={{borderCollapse: 'collapse', width: '100%', marginBottom: '20px', border: '1px solid #ddd'}}>
+          <thead>
+            <tr style={{backgroundColor: '#111111'}}>
+              <th style={{border: '1px solid #ddd', padding: '12px', textAlign: 'left'}}>Product</th>
+              <th style={{border: '1px solid #ddd', padding: '12px', textAlign: 'left'}}>Hours Required</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="rainbow-glow-row">
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://bambulab.com/en-us/a1-mini" style={{color: 'lightblue'}}>Bambu Lab A1 Mini 3D Printer</a></td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>45+ hours</td>
             </tr>
           </tbody>
         </table>
 
         <h3>Math Software</h3>
-        <em>Note: I dont recommend  buying the 1 month mathematica unless you are just using your remaining hours.</em>
-        <table style={{borderCollapse: 'collapse', width: '100%', marginBottom: '20px'}}>
+        <table style={{borderCollapse: 'collapse', width: '100%', marginBottom: '20px', border: '1px solid #ddd'}}>
           <thead>
             <tr style={{backgroundColor: '#111111'}}>
               <th style={{border: '1px solid #ddd', padding: '12px', textAlign: 'left'}}>Software</th>
@@ -639,39 +741,39 @@ document.addEventListener('DOMContentLoaded', function() {
           </thead>
           <tbody>
             <tr>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>Maple Student Edition</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.maplesoft.com/products/Maple/" style={{color: 'lightblue'}}>Maple Student Edition</a></td>
               <td style={{border: '1px solid #ddd', padding: '12px'}}>1 year</td>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>12+ hours</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>15+ hours</td>
             </tr>
             <tr>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>MATLAB Student Edition</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.mathworks.com/products/matlab.html" style={{color: 'lightblue'}}>MATLAB Student Edition</a></td>
               <td style={{border: '1px solid #ddd', padding: '12px'}}>Forever</td>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>8+ hours</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>10+ hours</td>
             </tr>
             <tr>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>Mathematica Student Edition</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.wolfram.com/mathematica-student-edition/" style={{color: 'lightblue'}}>Mathematica Student Edition</a></td>
               <td style={{border: '1px solid #ddd', padding: '12px'}}>1 month</td>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>1.5+ hours</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>2+ hours</td>
             </tr>
             <tr>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>Mathematica Student Edition</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.wolfram.com/mathematica-student-edition/" style={{color: 'lightblue'}}>Mathematica Student Edition</a></td>
               <td style={{border: '1px solid #ddd', padding: '12px'}}>6 months</td>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>8+ hours</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>10+ hours</td>
             </tr>
             <tr>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>Mathematica Student Edition</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.wolfram.com/mathematica-student-edition/" style={{color: 'lightblue'}}>Mathematica Student Edition</a></td>
               <td style={{border: '1px solid #ddd', padding: '12px'}}>1 year</td>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>14+ hours</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>15+ hours</td>
             </tr>
-            <tr>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>Mathematica Student Edition</td>
+            <tr className="rainbow-glow-row">
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.wolfram.com/mathematica-student-edition/" style={{color: 'lightblue'}}>Mathematica Student Edition</a></td>
               <td style={{border: '1px solid #ddd', padding: '12px'}}>4 years</td>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>35+ hours</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>39+ hours</td>
             </tr>
           </tbody>
         </table>
 
-        <p><strong>Note:</strong> Any remaining hours beyond your chosen reward can be applied toward grants or additional items from the same or a different category.</p>
+        <p><strong>Note:</strong> Any remaining hours beyond your chosen reward can be applied toward grants at $4/h or additional items from the same or a different category.</p>
         
       </PageTemplate>
     <PageTemplate path="axiom-faq">

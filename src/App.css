@@ -81,3 +81,48 @@ a, pre, code, button, input, textarea, select, label, option, thead, tr, p {
     display: none;
   }
 }
+
+@keyframes rainbow-gradient-rotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.rainbow-glow-row {
+  position: relative;
+  background: linear-gradient(90deg, 
+    rgba(255, 0, 0, 0.15),
+    rgba(255, 154, 0, 0.15),
+    rgba(208, 222, 33, 0.15),
+    rgba(79, 220, 74, 0.15),
+    rgba(63, 218, 216, 0.15),
+    rgba(47, 201, 226, 0.15),
+    rgba(28, 127, 238, 0.15),
+    rgba(95, 21, 242, 0.15),
+    rgba(186, 12, 248, 0.15),
+    rgba(251, 7, 217, 0.15),
+    rgba(255, 0, 0, 0.15)
+  );
+  background-size: 200% 100%;
+  animation: rainbow-gradient-rotate 4s linear infinite;
+  box-shadow: 
+    0 0 10px 1px rgba(255, 100, 200, 0.3),
+    0 0 20px 2px rgba(100, 200, 255, 0.2),
+    inset 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+@keyframes tooltip-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.tooltip-fade {
+  animation: tooltip-fade-in 0.3s ease-in;
+}
