@@ -16,7 +16,7 @@
       const hash = window.location.hash;
 
       // Construct the new URL with hash-based routing.
-      const newUrl = `/#${path}${search}${hash}`;
+      const newUrl = `/${path}${search}${hash}`;
       sessionStorage.redirect = window.location.href;
       // Redirect the user to the new hash-based URL.
       window.location.replace(newUrl);
