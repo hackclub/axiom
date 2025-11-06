@@ -806,9 +806,21 @@ document.addEventListener('DOMContentLoaded', function() {
               <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://education.ti.com/en/products/calculators/graphing-calculators/ti-nspire-cx-ii-cx-ii-cas" style={{color: 'lightblue'}}>TI-Nspire CX II</a></td>
               <td style={{border: '1px solid #ddd', padding: '12px'}}>31+ hours</td>
             </tr>
+            <tr>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://developer.nvidia.com/embedded/jetson-nano" style={{color: 'lightblue'}}>NVIDIA Jetson Nano</a></td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>30+ hours</td>
+            </tr>
+            <tr className="rainbow-glow-row">
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://store.potensic.com/products/atom-lt" style={{color: 'lightblue'}}>ATOM LT Sub-250g GPS Camera Drone</a></td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>38+ hours</td>
+            </tr>
             <tr className="rainbow-glow-row">
               <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://bambulab.com/en-us/a1-mini" style={{color: 'lightblue'}}>Bambu Lab A1 Mini 3D Printer</a></td>
               <td style={{border: '1px solid #ddd', padding: '12px'}}>45+ hours</td>
+            </tr>
+            <tr className="rainbow-glow-row">
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/nano-super-developer-kit/" style={{color: 'lightblue'}}>NVIDIA Jetson Orin Nano Super Developer Kit</a></td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>50+ hours</td>
             </tr>
             <tr>
               <td style={{border: '1px solid #ddd', padding: '12px'}}>Grant for math courses or books</td>
