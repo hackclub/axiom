@@ -684,6 +684,58 @@ document.addEventListener('DOMContentLoaded', function() {
           </tbody>
         </table>
 
+        <h3>Bonus</h3>
+        <table style={{borderCollapse: 'collapse', width: '100%', marginBottom: '20px', border: '1px solid #ddd'}}>
+          <thead>
+            <tr style={{backgroundColor: '#111111'}}>
+              <th style={{border: '1px solid #ddd', padding: '12px', textAlign: 'left'}}>Product</th>
+              <th style={{border: '1px solid #ddd', padding: '12px', textAlign: 'left'}}>Hours Required</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://store.arduino.cc/products/uno" style={{color: 'lightblue'}}>Arduino UNO R4</a></td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>12+ hours</td>
+            </tr>
+            <tr>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.casio.com/us/scientific-calculators/product.FX-991CW/" style={{color: 'lightblue'}}>Casio FX-991CW</a></td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>7+ hours</td>
+            </tr>
+            <tr>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.casio.com/us/scientific-calculators/product.FX-CG50/" style={{color: 'lightblue'}}>Casio FX-CG50 Graphing Calculator</a></td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>24+ hours</td>
+            </tr>
+            <tr>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://education.ti.com/en/products/calculators/graphing-calculators/ti-84-plus-ce-python" style={{color: 'lightblue'}}>TI-84 Plus CE Python Edition</a></td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>24+ hours</td>
+            </tr>
+            <tr>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://education.ti.com/en/products/calculators/graphing-calculators/ti-nspire-cx-ii-cx-ii-cas" style={{color: 'lightblue'}}>TI-Nspire CX II</a></td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>31+ hours</td>
+            </tr>
+            <tr>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://developer.nvidia.com/embedded/jetson-nano" style={{color: 'lightblue'}}>NVIDIA Jetson Nano</a></td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>30+ hours</td>
+            </tr>
+            <tr className="rainbow-glow-row">
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://store.potensic.com/products/atom-lt" style={{color: 'lightblue'}}>ATOM LT Sub-250g GPS Camera Drone</a></td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>38+ hours</td>
+            </tr>
+            <tr className="rainbow-glow-row">
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://bambulab.com/en-us/a1-mini" style={{color: 'lightblue'}}>Bambu Lab A1 Mini 3D Printer</a></td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>45+ hours</td>
+            </tr>
+            <tr className="rainbow-glow-row">
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/nano-super-developer-kit/" style={{color: 'lightblue'}}>NVIDIA Jetson Orin Nano Super Developer Kit</a></td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>50+ hours</td>
+            </tr>
+            <tr>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>Grant for math courses or books</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>$5/hour</td>
+            </tr>
+          </tbody>
+        </table>
+
         <h3>Math Software</h3>
         <table style={{borderCollapse: 'collapse', width: '100%', marginBottom: '20px', border: '1px solid #ddd'}}>
           <thead>
@@ -743,58 +795,6 @@ document.addEventListener('DOMContentLoaded', function() {
               <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.wolfram.com/mathematica-student-edition/" style={{color: 'lightblue'}}>Mathematica Student Edition</a></td>
               <td style={{border: '1px solid #ddd', padding: '12px'}}>4 years</td>
               <td style={{border: '1px solid #ddd', padding: '12px'}}>39+ hours</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h3>Bonus</h3>
-        <table style={{borderCollapse: 'collapse', width: '100%', marginBottom: '20px', border: '1px solid #ddd'}}>
-          <thead>
-            <tr style={{backgroundColor: '#111111'}}>
-              <th style={{border: '1px solid #ddd', padding: '12px', textAlign: 'left'}}>Product</th>
-              <th style={{border: '1px solid #ddd', padding: '12px', textAlign: 'left'}}>Hours Required</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://store.arduino.cc/products/uno" style={{color: 'lightblue'}}>Arduino UNO R4</a></td>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>12+ hours</td>
-            </tr>
-            <tr>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.casio.com/us/scientific-calculators/product.FX-991CW/" style={{color: 'lightblue'}}>Casio FX-991CW</a></td>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>7+ hours</td>
-            </tr>
-            <tr>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.casio.com/us/scientific-calculators/product.FX-CG50/" style={{color: 'lightblue'}}>Casio FX-CG50 Graphing Calculator</a></td>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>24+ hours</td>
-            </tr>
-            <tr>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://education.ti.com/en/products/calculators/graphing-calculators/ti-84-plus-ce-python" style={{color: 'lightblue'}}>TI-84 Plus CE Python Edition</a></td>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>24+ hours</td>
-            </tr>
-            <tr>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://education.ti.com/en/products/calculators/graphing-calculators/ti-nspire-cx-ii-cx-ii-cas" style={{color: 'lightblue'}}>TI-Nspire CX II</a></td>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>31+ hours</td>
-            </tr>
-            <tr>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://developer.nvidia.com/embedded/jetson-nano" style={{color: 'lightblue'}}>NVIDIA Jetson Nano</a></td>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>30+ hours</td>
-            </tr>
-            <tr className="rainbow-glow-row">
-              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://store.potensic.com/products/atom-lt" style={{color: 'lightblue'}}>ATOM LT Sub-250g GPS Camera Drone</a></td>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>38+ hours</td>
-            </tr>
-            <tr className="rainbow-glow-row">
-              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://bambulab.com/en-us/a1-mini" style={{color: 'lightblue'}}>Bambu Lab A1 Mini 3D Printer</a></td>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>45+ hours</td>
-            </tr>
-            <tr className="rainbow-glow-row">
-              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/nano-super-developer-kit/" style={{color: 'lightblue'}}>NVIDIA Jetson Orin Nano Super Developer Kit</a></td>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>50+ hours</td>
-            </tr>
-            <tr>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>Grant for math courses or books</td>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>$5/hour</td>
             </tr>
           </tbody>
         </table>
