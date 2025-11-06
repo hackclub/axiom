@@ -282,7 +282,7 @@ function App() {
     var hash = window.location.hash;
     delete sessionStorage.redirect;
     if (hash && hash !=="/"){
-      currentURL = "https://axiom.hackclub.com/"+hash
+      currentURL = "https://axiom.hackclub.com/"+hash.substring(1)
       console.log("Changed current URL variable because hash was found",hash)
     }
     else if (redirect && redirect !==window.location.href) {
