@@ -1,6 +1,6 @@
 <!--
    +----------------------------------------------------------+   
-   | Go back to the website: tanjim.org/axiom/mq_example.html |
+   | Go back to the website: tanjim.org/mq_example.html |
    | or just change the .txt to .html in the URL              |
    +----------------------------------------------------------+ 
 -->
