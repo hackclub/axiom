@@ -351,7 +351,7 @@ function App() {
                  </p>
                  <h3><a href="https://hackatime.hackclub.com/" style={{color: 'lightblue'}}>Hackatime</a> time tracking is required.</h3>
                  <p style={{fontSize:"0.8rem"}}>Only for students aged 18 or under who are eligible for <a href="https://hackclub.com" style={{color:"lightblue"}}>Hack Club</a>.</p>
-                 <p><Button href="https://forms.hackclub.com/axiom-submit" className="rainbow-glow-row" style={{width: '100%', display: 'block', textAlign: 'center', marginBottom: '10px'}}>Submit</Button></p>
+                 <p><Button href="https://submit.hackclub.com/axiom" className="rainbow-glow-row" style={{width: '100%', display: 'block', textAlign: 'center', marginBottom: '10px'}}>Submit</Button></p>
                  <p><Button href="/rewards">Rewards</Button> <Button href="https://hackclub.slack.com/archives/C09K4HZJ2DP">Join Slack</Button></p>
                  <p><Button href="/guides">Guides and tools</Button> <Button href="/faq">FAQ</Button></p>
                  <p><Button href="https://bananahannah7.github.io/drone_notebook/">Example project (not by me) </Button></p>
@@ -398,7 +398,7 @@ function App() {
         </p>
         <p><a href="https://hackatime.hackclub.com/" style={{color: 'lightblue'}}>Hackatime</a> time tracking is required.</p>
         <p style={{fontSize:"0.8rem"}}>Only for students aged 18 or under who are eligible for <a href="https://hackclub.com" style={{color:"lightblue"}}>Hack Club</a>.</p>
-        <p><Button href="https://forms.hackclub.com/axiom-submit" className="rainbow-glow-row" style={{width: '100%', display: 'block', textAlign: 'center', marginBottom: '10px'}}>Submit</Button></p>
+        <p><Button href="https://submit.hackclub.com/axiom" className="rainbow-glow-row" style={{width: '100%', display: 'block', textAlign: 'center', marginBottom: '10px'}}>Submit</Button></p>
         <p><Button href="/rewards">Rewards</Button> <Button href="https://hackclub.slack.com/archives/C09K4HZJ2DP">Join Slack</Button></p>
         <p><Button href="/guides">Guides and tools</Button> <Button href="/faq">FAQ</Button></p>
         <p><Button href="https://bananahannah7.github.io/drone_notebook/">Example project (not by me) </Button></p>
