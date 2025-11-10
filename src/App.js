@@ -407,13 +407,13 @@ function App() {
     </PageDiv>
     <PageTemplate path="submit">
       <h1>Submitting</h1>
-      <p>Currently, the YSWS is not started yet. We need more RSVPs for it to start.</p>
+      <p>The YSWS has started!</p>
       <p>If you are not in Hack Club yet, go to identity.hackclub.com and verify yourself first.</p>
       <p>You need to track your hours using Hackatime. <Button href="https://hackatime.hackclub.com/my/wakatime_setup">Set up Hackatime</Button></p>
-      <p>Then, RSVP the YSWS to let us know you're interested.</p>
-      <p><Button href="https://forms.fillout.com/t/aXkqWZoos2us">RSVP Here</Button></p>
-      <p> or paste this link: https://forms.fillout.com/t/aXkqWZoos2us into your browser.</p>
-      <p>After that, join the Slack channel #axiom: <Button href="https://hackclub.slack.com/archives/C09K4HZJ2DP">Join Slack</Button></p>
+      <p>Then, make your project while tracking the hours using Hackatime. After that, you can submit here:</p>
+      <p><Button href="https://submit.hackclub.com/axiom" className="rainbow-glow-row" style={{width: '100%', display: 'block', textAlign: 'center', marginBottom: '10px'}}>Submit</Button></p>
+      <p> or paste this link: https://submit.hackclub.com/axiom into your browser.</p>
+      <p>Join the Slack channel #axiom as well  for any help or questions: <Button href="https://hackclub.slack.com/archives/C09K4HZJ2DP">Join Slack</Button></p>
     </PageTemplate>
     <PageDiv path="404" className="App">
     <h1>404 - Page Not Found</h1>
