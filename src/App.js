@@ -343,7 +343,7 @@ function App() {
                         tooltip.classList.remove('tooltip-fade');
                       }}
                    >
-                     V1 running from 11/4/25 to 11/18/25
+                     V1 running from 11/4/25 to 11/18/25 (ended). You can still code projects and the hours will go to v2.
                    </span>
                    <span style={{display: 'none', position: 'absolute', bottom: '100%', left: '50%', transform: 'translateX(-50%)', backgroundColor: '#222', color: '#fff', padding: '10px 14px', borderRadius: '6px', width: 'max-content', maxWidth: '380px', marginBottom: '8px', zIndex: 1000, fontSize: '1.05rem', boxShadow: '0 2px 8px rgba(0,0,0,0.3)', textAlign: 'center'}}>
                      Axiom WILL have a V2! If you start a project for V1 but don't submit it, you WILL be able to submit for V2 and keep your tracked hours!
