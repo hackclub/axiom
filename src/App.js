@@ -836,9 +836,11 @@ document.addEventListener('DOMContentLoaded', function() {
       <h3>Does the project have to be finished to submit?</h3>
       <p>A: Yes T-T</p>
       <h3>Can I build upon older projects?</h3>
-      <p>A: Yes, as long as you add meaningful features to it and fullfil the minimum hour requirement. However, only new hours logged on those projects will be counted</p>
+      <p>A: Yes, as long as you add meaningful features to it and fullfil the minimum hour requirement. 
+            However, only new hours logged on those projects will be counted</p>
       <h3>Can I fork projects and build upon them?</h3>
-      <p>A: Yes, as long as you add meaningful features to it and fullfil the minimum hour requirement. However, only new hours logged on those projects will be counted</p>
+      <p>A: Yes, as long as you add meaningful features to it and fullfil the minimum hour requirement. 
+            However, only new hours logged on those projects will be counted</p>
       <h3>Can my project be a bunch of small ones under one website/ app?</h3>
       <p>A: No.</p>
       <h3>Would this be a good project idea?</h3>
