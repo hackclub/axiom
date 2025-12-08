@@ -806,7 +806,7 @@ document.addEventListener('DOMContentLoaded', function() {
               <td style={{border: '1px solid #ddd', padding: '12px'}}>1 year</td>
               <td style={{border: '1px solid #ddd', padding: '12px'}}>15+ hours</td>
             </tr>
-            <tr className="rainbow-glow-row">
+            <tr>
               <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.wolfram.com/mathematica-student-edition/" style={{color: 'lightblue'}}>Mathematica Student Edition</a></td>
               <td style={{border: '1px solid #ddd', padding: '12px'}}>4 years</td>
               <td style={{border: '1px solid #ddd', padding: '12px'}}>39+ hours</td>
