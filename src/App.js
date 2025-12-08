@@ -689,12 +689,16 @@ document.addEventListener('DOMContentLoaded', function() {
           </thead>
           <tbody>
             <tr>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.casio.com/us/scientific-calculators/product.FX-991CW/" style={{color: 'lightblue'}}>Casio FX-991CW</a></td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>7+ hours</td>
+            </tr>
+            <tr>
               <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://store.arduino.cc/products/uno" style={{color: 'lightblue'}}>Arduino UNO R4</a></td>
               <td style={{border: '1px solid #ddd', padding: '12px'}}>12+ hours</td>
             </tr>
-            <tr>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.casio.com/us/scientific-calculators/product.FX-991CW/" style={{color: 'lightblue'}}>Casio FX-991CW</a></td>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>7+ hours</td>
+            <tr className="rainbow-glow-row">
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.crunchlabs.com/" style={{color: 'lightblue'}}>CrunchLabs 2 Month Subscription</a></td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>19+ hours</td>
             </tr>
             <tr>
               <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.casio.com/us/scientific-calculators/product.FX-CG50/" style={{color: 'lightblue'}}>Casio FX-CG50 Graphing Calculator</a></td>
@@ -704,6 +708,10 @@ document.addEventListener('DOMContentLoaded', function() {
               <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://education.ti.com/en/products/calculators/graphing-calculators/ti-84-plus-ce-python" style={{color: 'lightblue'}}>TI-84 Plus CE Python Edition</a></td>
               <td style={{border: '1px solid #ddd', padding: '12px'}}>24+ hours</td>
             </tr>
+            <tr className="rainbow-glow-row">
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.curiositybox.com/" style={{color: 'lightblue'}}>Curiosity Box</a></td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>25+ hours</td>
+            </tr>
             <tr>
               <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://education.ti.com/en/products/calculators/graphing-calculators/ti-nspire-cx-ii-cx-ii-cas" style={{color: 'lightblue'}}>TI-Nspire CX II</a></td>
               <td style={{border: '1px solid #ddd', padding: '12px'}}>31+ hours</td>
@@ -712,17 +720,25 @@ document.addEventListener('DOMContentLoaded', function() {
               <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://developer.nvidia.com/embedded/jetson-nano" style={{color: 'lightblue'}}>NVIDIA Jetson Nano</a></td>
               <td style={{border: '1px solid #ddd', padding: '12px'}}>30+ hours</td>
             </tr>
-            <tr className="rainbow-glow-row">
+            <tr>
               <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://store.potensic.com/products/atom-lt" style={{color: 'lightblue'}}>ATOM LT Sub-250g GPS Camera Drone</a></td>
               <td style={{border: '1px solid #ddd', padding: '12px'}}>38+ hours</td>
             </tr>
-            <tr className="rainbow-glow-row">
+            <tr>
               <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://bambulab.com/en-us/a1-mini" style={{color: 'lightblue'}}>Bambu Lab A1 Mini 3D Printer</a></td>
               <td style={{border: '1px solid #ddd', padding: '12px'}}>45+ hours</td>
             </tr>
-            <tr className="rainbow-glow-row">
+            <tr>
               <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/nano-super-developer-kit/" style={{color: 'lightblue'}}>NVIDIA Jetson Orin Nano Super Developer Kit</a></td>
               <td style={{border: '1px solid #ddd', padding: '12px'}}>50+ hours</td>
+            </tr>
+            <tr className="rainbow-glow-row">
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.crunchlabs.com/" style={{color: 'lightblue'}}>CrunchLabs 6 Month Subscription</a></td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>52+ hours</td>
+            </tr>
+            <tr className="rainbow-glow-row">
+              <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.crunchlabs.com/" style={{color: 'lightblue'}}>CrunchLabs 12 Month Subscription</a></td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>84+ hours</td>
             </tr>
             <tr>
               <td style={{border: '1px solid #ddd', padding: '12px'}}>Grant for math courses or books</td>
