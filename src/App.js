@@ -741,7 +741,11 @@ document.addEventListener('DOMContentLoaded', function() {
               <td style={{border: '1px solid #ddd', padding: '12px'}}>84+ hours</td>
             </tr>
             <tr>
-              <td style={{border: '1px solid #ddd', padding: '12px'}}>Grant for math courses or books</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>Grant for Math books</td>
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>$5/hour</td>
+            </tr>
+            <tr className="rainbow-glow-row">
+              <td style={{border: '1px solid #ddd', padding: '12px'}}>Grant for Leetcode, Coursera AoPS etc.</td>
               <td style={{border: '1px solid #ddd', padding: '12px'}}>$5/hour</td>
             </tr>
           </tbody>
