@@ -829,6 +829,41 @@ document.addEventListener('DOMContentLoaded', function() {
       <h3>Do I need to download anything?</h3>
       <p>A: Not really, but you do need to set up Hackatime. <Button href="https://hackatime.hackclub.com/my/wakatime_setup">Setup</Button></p>
       <p>You can use Codespaces if you want.</p>
+      <h3>How many projects can I make?</h3>
+      <p>A: As many as you want! Minimum time spent on each project must be 8hrs.</p>
+      <h3>Are the hours spent on V1, V2 and time between counted?</h3>
+      <p>A: Yes. All of it. If you have'nt submitted already.</p>
+      <h3>Does the project have to be finished to submit?</h3>
+      <p>A: Yes T-T</p>
+      <h3>Can I build upon older projects?</h3>
+      <p>A: Yes, as long as you add meaningful features to it and fullfil the minimum hour requirement. However, only new hours logged on those projects will be counted</p>
+      <h3>Can I fork projects and build upon them?</h3>
+      <p>A: Yes, as long as you add meaningful features to it and fullfil the minimum hour requirement. However, only new hours logged on those projects will be counted</p>
+      <h3>Can my project be a bunch of small ones under one website/ app?</h3>
+      <p>A: No.</p>
+      <h3>Would this be a good project idea?</h3>
+      <p>A: Ask <a href="https://hackclub.enterprise.slack.com/docs/T0266FRGM/F09Q2U6AWH1" style={{color: "lightblue"}}>here</a></p>
+      <h3>Is AI allowed?</h3>
+      <p>No.</p>
+      <h3>I want the rewards list to be extended!</h3>
+      <p>A: Ask in <a href="https://hackclub.enterprise.slack.com/docs/T0266FRGM/F09JVLBN9RD" style={{color: "lightblue"}}>this</a> canvas on slack, the rate for items approved here will be $4/h</p>
+      <h3>How can I avoid hour reduction after I submit?</h3>
+      <p>A: Frequent and descriptive commits every 1hr or so.</p>
+      <p>   Your hours may get reduced if the time you spent on the project is much bigger than the time it would be expected to take</p>
+      <h3>What are the submission requirements?</h3>
+      <p>A: A github URL with frequent commits, and a live demo/ playable link of the project</p>
+      <h3>What if I find a cheaper vendor for my country?</h3>
+      <p>A: DM the link to the vendor and product to @dhamari on slack and you can work less hours!</p>
+      <h3>What do I do after submission?</h3>
+      <p>A: We'll review your project, and dm you your HCB grant!</p>
+      <h3>What if I have issues with HCB?</h3>
+      <p>A: You'll have to ask in #hcb</p>
+      <h3>Is the grant stackable?</h3>
+      <p>A: Yes.</p>
+      <h3>Who is handling fullfilment?</h3>
+      <p>A: @dhamari on slack</p>
+      <h3>Can I double dip?</h3>
+      <p>A: Not with Accelerate or Athena, but you will have to ask the respective hosts if you want to double dip with something else</p>
       <h3>I have more questions!</h3>
       <p>Ask in the Slack channel #axiom</p>
 
