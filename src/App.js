@@ -343,10 +343,7 @@ function App() {
                         tooltip.classList.remove('tooltip-fade');
                       }}
                    >
-                     Axiom V1 ended 18 Nov but you can still log hours on new and existing projects.
-                   </span>
-                   <span style={{display: 'none', position: 'absolute', bottom: '100%', left: '50%', transform: 'translateX(-50%)', backgroundColor: '#222', color: '#fff', padding: '10px 14px', borderRadius: '6px', width: 'max-content', maxWidth: '380px', marginBottom: '8px', zIndex: 1000, fontSize: '1.05rem', boxShadow: '0 2px 8px rgba(0,0,0,0.3)', textAlign: 'center'}}>
-                     Axiom WILL have a V2! If you're working on a project now or have started a project for V1 but couldn't submit it, you WILL be able to submit for V2 and keep your tracked hours from V1, V2 and time in between!
+                     Axiom V2 running from 8 Dec to 22 Dec
                    </span>
                  </p>
                  <h3><a href="https://hackatime.hackclub.com/" style={{color: 'lightblue'}}>Hackatime</a> time tracking is required.</h3>
