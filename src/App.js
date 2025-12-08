@@ -670,7 +670,7 @@ document.addEventListener('DOMContentLoaded', function() {
               <td style={{border: '1px solid #ddd', padding: '12px'}}>Uses RPI 5 16GB RAM, 256GB NVMe, RGB keyboard</td>
               <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.raspberrypi.com/products/raspberry-pi-500/" style={{color: 'lightblue'}}>View details</a></td>
             </tr>
-            <tr className="rainbow-glow-row">
+            <tr>
               <td style={{border: '1px solid #ddd', padding: '12px'}}><a href="https://www.canakit.com/raspberry-pi-500-plus.html?cid=usd" style={{color: 'lightblue'}}>Pi 500 Plus Desktop Kit</a></td>
               <td style={{border: '1px solid #ddd', padding: '12px'}}>48+ hours</td>
               <td style={{border: '1px solid #ddd', padding: '12px'}}>Uses RPI 5 16GB RAM, 256GB NVMe, RGB keyboard</td>
