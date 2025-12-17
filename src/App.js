@@ -343,7 +343,7 @@ function App() {
                         tooltip.classList.remove('tooltip-fade');
                       }}
                    >
-                     Axiom V2 running from 8 Dec to 22 Dec
+                     Axiom V2 running from 8 Dec to 31 Dec
                    </span>
                  </p>
                  <h3><a href="https://hackatime.hackclub.com/" style={{color: 'lightblue'}}>Hackatime</a> time tracking is required.</h3>
